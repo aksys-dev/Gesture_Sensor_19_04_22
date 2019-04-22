@@ -328,7 +328,7 @@ public class MainActivity extends AppCompatActivity implements ServiceConnection
         final Handler Rigth = new Handler() {
             @Override
             public void handleMessage(Message msg) {
-                inference.setText("Rigth");
+                inference.setText("Right");
             }
         };
         final Handler Up = new Handler() {
@@ -418,6 +418,8 @@ public class MainActivity extends AppCompatActivity implements ServiceConnection
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     } catch (ArrayIndexOutOfBoundsException e) {
+                        e.printStackTrace();
+                    } catch (IndexOutOfBoundsException e) {
                         e.printStackTrace();
                     }
                 }
